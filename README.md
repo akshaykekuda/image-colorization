@@ -1,4 +1,4 @@
-##Overview
+## Overview
 
 The objective of this project is to produce color images given grayscale input image. This is a difficult task in general as the 
 gray scale images are of single channel and color images are of 3 channels i.e RGB. Since we don't have a straightforward mathematical
