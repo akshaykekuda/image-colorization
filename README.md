@@ -12,7 +12,7 @@ split of 20%. Based on the `model` argument,`Trainer` objects are created and `t
 `train.py` contains 3 types of `Trainer` class. `Trainer` trains on data according to the model specified and runs training and validation.
 Dataloader is initialized from one of the `colorize_data.py` classes. `colorize_data.py` creates `DataSet` objects for use in the torch dataloader.
 
-###Network Architecture
+### Network Architecture
 
 `basic_network.py` contains 3 types of models: `basic`, `labnet` and `preincep`.
 
@@ -48,7 +48,7 @@ The rgb image is resized to 299x299 and normalized with mean=0.5 and std=0.5 for
 The rgb image is also resized to 224x224 for the encoder network. 
 The rgb image is also converted to the lab space which gives the target image for training.
 
-###Inference
+### Inference
 `inference.py` contains different functions to run inference for `basic`, `labnet` and `preincep` networks. In case of `labnet`
 and `preincep` networks, the predicted image is in the lab space. These are stacked with the input gray images to generate the 
 `rgb` output. Each of the channels are rescaled appropriately here. If rgb images are given as input, they are converted to gray
